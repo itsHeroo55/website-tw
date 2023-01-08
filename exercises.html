@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css website.css">
+</head>
+<body>
+    <div class="header">
+        
+        <img src="math logo.png" height="60px" width="60px" class="logo">
+        <p class="text1"><span style="color: red;"> mathematics</span><span style="color:rgb(2, 178, 218)"> for </span><span style="color: greenyellow;">kids</span> </p> 
+    </div>
+
+    <div class="wrapper">
+        <div class="side_menu">
+            <div class="menu">
+                <a href="My website.html"  >Home</a>
+                <a href="exercises.html" class="active">exercises</a>
+                <a href="aboutus.html">abous us</a>
+            </div>
+        </div>
+    
+        <center><h1 class="ok">addition exercise</h1></center>
+<form name="formadd" class="form">
+    <img src="addition1.png" height="200px" class="pic" style='float: right;'>
+    3+2 = <input type="text" name="resultat1"><br><br>
+    6+7 = <input type="text" name="resultat2" id="res2"><br> <br>
+    4+4 = <input type="text" name="resultat3"><br><br>
+    3+10= <input type="text" name="resultat4"><br><br>
+    <input type="button" value="Valide" onclick="revadd()" class="valide">
+    </form>
+    <script type="text/javascript">
+    var Nbr0=0;
+        function revadd (){
+        if(document.formadd.resultat1.value==5) Nbr0++; 
+        if(document.formadd.resultat2.value==13) Nbr0++; 
+        if(document.formadd.resultat3.value==8) Nbr0++; 
+        if(document.formadd.resultat4.value==13) Nbr0++;
+        if(confirm("Vous avez "+Nbr0+" bonnes réponses, correction ?")){ 
+            document.formadd.resultat1.value=5; 
+            document.formadd.resultat2.value=13; 
+            document.formadd.resultat3.value=8; 
+            document.formadd.resultat4.value=13;
+        } }
+        </script>
+        <center><h1 class="ok">multiplication exercise</h1></center>
+        <form name="formMult" class="form">
+            <img src="mul2.png" height="200px" class="pic" style='float: right;'>
+            4*5 = <input type="text" name="resultat1"><br><br>
+            6*4 = <input type="text" name="resultat2" id="res2"><br> <br>
+            9*4 = <input type="text" name="resultat3"><br><br>
+            3*10= <input type="text" name="resultat4"><br><br>
+            <input type="button" value="Valide" onclick="revMult()" class="valide">
+            </form>
+            <script type="text/javascript">
+            var Nbr1 =0;
+                function revMult (){
+                if(document.formMult.resultat1.value==20) Nbr1++; 
+                if(document.formMult.resultat2.value==24) Nbr1++; 
+                if(document.formMult.resultat3.value==36) Nbr1++; 
+                if(document.formMult.resultat4.value==30) Nbr1++;
+                if(confirm("Vous avez "+Nbr1+" bonnes réponses, correction ?")){ 
+                    document.formMult.resultat1.value=20; 
+                    document.formMult.resultat2.value=24; 
+                    document.formMult.resultat3.value=36; 
+                    document.formMult.resultat4.value=30;
+                } }
+                </script>
+
+    <center><h1 class="ok">substraction exercise</h1></center>
+    <form name="formsub" class="form">
+        <img src="sous.png" height="200px" class="pic" style='float: right;'>
+        9-2 = <input type="text" name="resultat1"><br><br>
+        15-6= <input type="text" name="resultat2" id="res2"><br> <br>
+        17-2= <input type="text" name="resultat3"><br><br>
+        6-3 = <input type="text" name="resultat4"><br><br>
+        <input type="button" value="Valide" onclick="revsub()" class="valide">
+        </form>
+        <script type="text/javascript">
+        var Nbr2=0;
+            function revsub (){
+            if(document.formsub.resultat1.value==7) Nbr2++; 
+            if(document.formsub.resultat2.value==9) Nbr2++; 
+            if(document.formsub.resultat3.value==15) Nbr2++; 
+            if(document.formsub.resultat4.value==3) Nbr2++;
+            if(confirm("Vous avez "+Nbr2+" bonnes réponses, correction ?")){ 
+                document.formsub.resultat1.value=7; 
+                document.formsub.resultat2.value=9; 
+                document.formsub.resultat3.value=15; 
+                document.formsub.resultat4.value=3;
+            } }
+            </script>
+
+<center><h1 class="ok">division exercise</h1></center>
+<form name="formdiv" class="form">
+    <img src="div.png" height="200px" class="pic" style='float: right;'>
+    16/4 = <input type="text" name="resultat1"><br><br>
+    15/3 = <input type="text" name="resultat2" id="res2"><br> <br>
+    24/6 = <input type="text" name="resultat3"><br><br>
+    6/3  = <input type="text" name="resultat4"><br><br>
+    <input type="button" value="Valide" onclick="revdiv()" class="valide">
+    </form>
+    <script type="text/javascript">
+    var Nbr3 =0;
+        function revdiv (){
+        if(document.formdiv.resultat1.value==4) Nbr3++; 
+        if(document.formdiv.resultat2.value==5) Nbr3++; 
+        if(document.formdiv.resultat3.value==4) Nbr3++; 
+        if(document.formdiv.resultat4.value==2) Nbr3++;
+        if(confirm("Vous avez "+Nbr3+" bonnes réponses, correction ?")){ 
+            document.formdiv.resultat1.value=4; 
+            document.formdiv.resultat2.value=5; 
+            document.formdiv.resultat3.value=4; 
+            document.formdiv.resultat4.value=2;
+        } }
+        </script>
+</body>
+</html>
